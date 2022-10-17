@@ -64,6 +64,10 @@ picture {
     background-color: var(--clr-nuetral-200);
 }
 
+.bg-primary-100 {
+    background-color: var(--clr-primary-100);
+}
+
 .clr-primary-100 {
     color: var(--clr-primary-100);
 }
@@ -84,7 +88,7 @@ picture {
 }
 
 .font-xl {
-    font-size: clamp(12px, 2vw, 1px);
+    font-size: clamp(12px, 2vw, 10px);
     font-weight: 500;
     line-height: 0.1rem !important;
 }
@@ -215,7 +219,7 @@ section:has(.articles)>* {
 section:has(.articles)>h1 {
     font-size: clamp(15px, 3vw, 30px) !important;
     font-weight: 500;
-    line-height: 7rem;
+    line-height: 6rem;
 }
 
 
@@ -225,7 +229,7 @@ section:has(.articles)>h1 {
     gap: 2rem;
 }
 
-.articles>div{
+.articles>div {
     border: 1px solid var(--clr-nuetral-200);
     border-radius: 4px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -233,7 +237,7 @@ section:has(.articles)>h1 {
     cursor: pointer;
 }
 
-.articles>div:hover{
+.articles>div:hover {
     transform: scale(1.1);
     box-shadow: 0 3px 10px hsl(136, 65%, 51%);
 }
@@ -243,20 +247,86 @@ section:has(.articles)>h1 {
     border-radius: 4px 8px 0px 0px
 }
 
-.image__label{
-    font-size: clamp(.8rem, .5vw,10px);
+.image__label {
+    font-size: clamp(.5rem, .5vw, 10px);
 }
 
-.article__info{
+.article__info {
     width: 80%;
     margin: auto;
 }
 
 
-.article__info:hover > a{
+.article__info:hover>a {
     color: hsl(136, 65%, 51%);
 }
 
+footer {
+    width: 100%;
+    padding-block: 3rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    width: 70%;
+    margin: auto;
+}
+
+.footer__container div~* {
+    margin-left: 2rem
+}
+
+.footer__contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contact>* {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.footer__icon {
+    width: 7rem;
+}
+
+.logo2 {
+    margin-block-end: 2rem;
+    width: 7rem;
+}
+
+.icons {
+    display: flex;
+    gap: .6rem;
+    padding: 0;
+}
+
+.icons img {
+    width: .7rem;
+}
+
+.footer__items ul {
+    margin: 0;
+}
+
+.footer__items li {
+    font-size: clamp(14px, .7vw, 1rem);
+    color: rgb(231, 241, 243);
+}
+
+.footer__items li~* {
+    line-height: 1.5rem;
+}
+
+.footer__copyright {
+    text-align: end;
+}
+
+.footer__copyright p {
+    font-size: 14px;
+}
 
 
 @media screen and (max-width: 500px) {
