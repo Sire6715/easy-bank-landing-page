@@ -35,7 +35,7 @@
         background-image: url(./images/bg-intro-mobile.svg);
         background-repeat: no-repeat;
         background-position: 0px -52px;
-        background-size: 26rem;
+        background-size: cover;
         grid-row-start: 1;
         padding-block: 11rem;
     }
