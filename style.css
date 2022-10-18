@@ -31,6 +31,7 @@ body {
     min-height: 100vh;
     font-family: 'League Spartan', sans-serif;
     text-rendering: optimizeSpeed;
+    overflow-x: hidden;
     line-height: 0.9;
     padding: 0;
     margin: 0;
@@ -83,10 +84,10 @@ picture {
 }
 
 .font-xl {
-    font-size: clamp(1rem, 2vw, 10px);
+    font-size: clamp(1.4rem, vw, 10px);
     font-weight: 500;
-    line-height: 0.1rem !important;
 }
+
 
 ul,
 ol[role="list"] {
@@ -141,7 +142,7 @@ nav ul {
 }
 
 .intro__article p {
-    font-size: clamp(.8rem, 2vw, 14px);
+    font-size: clamp(.8rem, 1vw, 14px);
     font-weight: 500;
     line-height: 20px;
 }
@@ -195,7 +196,7 @@ section:has(.cards) h1 {
 }
 
 section:has(.cards) p {
-    font-size: clamp(1rem, 2vw, 16px);
+    font-size: clamp(.5rem, 1vw, 16px);
     line-height: 1.5rem;
     font-weight: 400;
 }

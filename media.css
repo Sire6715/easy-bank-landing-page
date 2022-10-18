@@ -44,7 +44,7 @@
         right: 0;
     }
 
-    button:not([role="button"]){
+    button:not([role="button"]) {
         display: inline;
     }
 
@@ -75,9 +75,6 @@
         text-align: center;
     }
 
-    /* .footer__icon{
-        margin: auto !important;
-    } */
 
     .footer__container div~* {
         margin-left: 0;
@@ -86,4 +83,103 @@
     .footer__copyright {
         text-align: center;
     }
+}
+
+/* tablets */
+@media screen and (max-width: 768px) and (min-width: 480px) {
+
+
+    nav {
+        justify-content: space-between;
+        padding-inline: 1rem;
+    }
+
+    nav img {
+        margin-block: 1rem;
+    }
+
+    .nav__items {
+        display: none;
+    }
+
+    .nav__button {
+        display: none;
+    }
+
+    .intro,
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+
+    .intro__article {
+        text-align: center;
+        grid-row-start: 2;
+        margin-block-start: 13rem;
+    }
+
+    .intro__image {
+        background-image: url(./images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 0px -52px;
+        background-size: cover;
+        grid-row-start: 1;
+        padding-block: 14rem;
+    }
+
+    .image__mockups {
+        right: 0;
+    }
+
+    button:not([role="button"]) {
+        display: inline;
+    }
+
+    section:has(.cards) {
+        text-align: center;
+        margin-block-start: 25em;
+    }
+
+    section:has(.cards) img {
+        margin: auto;
+    }
+
+    .articles {
+        gap: 2rem !important;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.5rem;
+    }
+
+    .cards__intro {
+        margin-block-end: 3rem;
+    }
+
+    .articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__items ul {
+        margin: 0;
+        text-align: center;
+    }
+
+
+    .footer__container div~* {
+        margin-left: 0;
+    }
+
+    .footer__copyright {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 900px) {
+    .intro {
+        height: auto !important;
+        padding-left: 5rem;
+        padding-block: 2em;
+}
 }
