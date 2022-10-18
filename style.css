@@ -196,7 +196,7 @@ section:has(.cards) h1 {
 }
 
 section:has(.cards) p {
-    font-size: clamp(.5rem, 1vw, 16px);
+    font-size: clamp(.5rem, 4vw, 16px);
     line-height: 1.5rem;
     font-weight: 400;
 }

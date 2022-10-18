@@ -25,6 +25,10 @@
         grid-template-columns: 1fr;
     }
 
+    .intro{
+        gap: 2rem;
+    }
+
     .intro__article {
         text-align: center;
         grid-row-start: 2;
