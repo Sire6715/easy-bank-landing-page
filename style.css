@@ -123,6 +123,7 @@ nav {
     font-weight: 500 !important;
     cursor: pointer;
     transition: all .3s ease !important;
+    text-transform: capitalize;
 }
 
 
