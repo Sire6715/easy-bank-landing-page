@@ -124,6 +124,57 @@ nav ul {
     border-radius: 4rem;
 }
 
+#menu__btn{
+    border: 0px;
+    outline: none;
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+  }
+  
+  .hamburger__top,
+  .hamburger__middle,
+  .hamburger__bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger__middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger__bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  
+  .open .hamburger__top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+  .open .hamburger__middle {
+    display: none;
+  }
+  
+  .open .hamburger__bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+
 .intro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -238,7 +289,7 @@ section:has(.articles)>h1 {
     border: 1px solid var(--clr-nuetral-200);
     border-radius: 4px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    transition: all ease-in .3s;
+    transition: all ease-in-out .3s;
     cursor: pointer;
 }
 
@@ -311,8 +362,9 @@ footer {
     padding: 0;
 }
 
-.icons img {
-    width: 1rem;
+.icons svg {
+    width: 1.3rem;
+    cursor: pointer;
 }
 
 .footer__items ul {
@@ -324,7 +376,23 @@ footer {
     font-size: clamp(14px, .7vw, 1rem);
     color: rgb(231, 241, 243);
     text-transform: capitalize;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
 }
+
+.footer__items li:hover{
+    color: hsl(136, 65%, 51%);
+    scale: 1.1;
+}
+
+
+svg:hover path {
+    fill: #31d35c;
+}
+
+svg path {
+    transition: all ease 0.3s;
+  }
 
 .footer__items li~* {
     margin-block: 1.2rem;
